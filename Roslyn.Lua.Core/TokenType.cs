@@ -1,0 +1,30 @@
+﻿namespace Roslyn.Lua.Core
+{
+    public enum TokenType
+    {
+        BlockStart,
+        BlockEnd,
+        Keyword,
+        Return,
+        Punctuation,
+        UnaryOperator,
+        BinaryOperator,
+        MinusOperator,
+        AssignmentOperator,
+        Identifier,
+        IntegerLiteral,
+        NumberLiteral,
+        BooleanLiteral,
+        StringLiteral,
+        TableLiteralStart,
+        TableLiteralEnd,
+        ParenStart,
+        ParenEnd,
+        IndexerStart,
+        IndexerEnd,
+        NilLiteral,
+        Delimiter,
+        AccessOperator,
+        Whitespace
+    }
+}

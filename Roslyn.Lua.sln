@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roslyn.Lua", "Roslyn.Lua\Ro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roslyn.Lua.Core", "Roslyn.Lua.Core\Roslyn.Lua.Core.csproj", "{FACA8094-B207-457E-9108-90C4EB367A48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roslyn.Lua.TreeViewer", "Roslyn.Lua.TreeViewer\Roslyn.Lua.TreeViewer.csproj", "{C26D3E2D-6AC2-4D17-A84D-7919D8D168C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roslyn.Lua.Core.Test", "Roslyn.Lua.Core.Test\Roslyn.Lua.Core.Test.csproj", "{1D4CAD4B-7636-41B8-A507-BE61FC4DB1D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FACA8094-B207-457E-9108-90C4EB367A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FACA8094-B207-457E-9108-90C4EB367A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FACA8094-B207-457E-9108-90C4EB367A48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C26D3E2D-6AC2-4D17-A84D-7919D8D168C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C26D3E2D-6AC2-4D17-A84D-7919D8D168C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C26D3E2D-6AC2-4D17-A84D-7919D8D168C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C26D3E2D-6AC2-4D17-A84D-7919D8D168C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D4CAD4B-7636-41B8-A507-BE61FC4DB1D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D4CAD4B-7636-41B8-A507-BE61FC4DB1D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D4CAD4B-7636-41B8-A507-BE61FC4DB1D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D4CAD4B-7636-41B8-A507-BE61FC4DB1D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

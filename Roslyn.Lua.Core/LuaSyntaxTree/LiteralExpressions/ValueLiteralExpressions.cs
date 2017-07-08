@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace Roslyn.Lua.Core.LuaSyntaxTree.LiteralExpressions
@@ -12,7 +11,7 @@ namespace Roslyn.Lua.Core.LuaSyntaxTree.LiteralExpressions
 
         }
         
-        public static StringLiteralExpression Specifies(IEnumerable<Token> source)
+        public static StringLiteralExpression Create(IEnumerable<Token> source)
         {
             if (source.First().Type == TokenType.StringLiteral)
                 return new StringLiteralExpression(source.Take(1));
@@ -29,7 +28,7 @@ namespace Roslyn.Lua.Core.LuaSyntaxTree.LiteralExpressions
             Value = int.Parse(source.Single().Source);
         }
 
-        public static IntegerLiteralExpression Specifies(IEnumerable<Token> source)
+        public static IntegerLiteralExpression Create(IEnumerable<Token> source)
         {
             if (source.First().Type == TokenType.IntegerLiteral)
                 return new IntegerLiteralExpression(source.Take(1));
@@ -46,7 +45,7 @@ namespace Roslyn.Lua.Core.LuaSyntaxTree.LiteralExpressions
             Value = double.Parse(source.Single().Source);
         }
 
-        public static NumberLiteralExpression Specifies(IEnumerable<Token> source)
+        public static NumberLiteralExpression Create(IEnumerable<Token> source)
         {
             if (source.First().Type == TokenType.NumberLiteral)
                 return new NumberLiteralExpression(source.Take(1));
@@ -63,7 +62,7 @@ namespace Roslyn.Lua.Core.LuaSyntaxTree.LiteralExpressions
             Value = source.Single().Source.StartsWith("true");
         }
 
-        public static BooleanLiteralExpression Specifies(IEnumerable<Token> source)
+        public static BooleanLiteralExpression Create(IEnumerable<Token> source)
         {
             if (source.First().Type == TokenType.BooleanLiteral)
                 return new BooleanLiteralExpression(source.Take(1));
@@ -79,7 +78,7 @@ namespace Roslyn.Lua.Core.LuaSyntaxTree.LiteralExpressions
         {            
         }
 
-        public static NilExpression Specifies(IEnumerable<Token> source)
+        public static NilExpression Create(IEnumerable<Token> source)
         {
             if (source.First().Type == TokenType.NilLiteral)
                 return new NilExpression(source.Take(1));

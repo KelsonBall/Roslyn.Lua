@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{381C809C-10B0-4D17-BD64-81542B5E0FB5}</ProjectGuid>
+    <ProjectGuid>{1D4CAD4B-7636-41B8-A507-BE61FC4DB1D3}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Roslyn.Lua</RootNamespace>
-    <AssemblyName>Roslyn.Lua</AssemblyName>
+    <RootNamespace>Roslyn.Lua.Core.Test</RootNamespace>
+    <AssemblyName>Roslyn.Lua.Core.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="KelsonBall.Testing.TestRunner, Version=1.0.6169.39506, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\KelsonBall.Testing.1.0.0\lib\KelsonBall.Testing.TestRunner.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,11 +45,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Compiler.cs" />
+    <Compile Include="LuaSyntaxTree\BlockTest.cs" />
+    <Compile Include="LuaSyntaxTree\FlowExpressions\FunctionStatementTest.cs" />
+    <Compile Include="LuaSyntaxTree\FlowExpressions\ParenExpressionTest.cs" />
+    <Compile Include="LuaSyntaxTree\FlowStatements\ForInStatementTest.cs" />
+    <Compile Include="LuaSyntaxTree\FlowStatements\ForNumStatementTest.cs" />
+    <Compile Include="LuaSyntaxTree\FlowStatements\JumpStatementsTest.cs" />
+    <Compile Include="LuaSyntaxTree\FlowStatements\RepeatStatementTest.cs" />
+    <Compile Include="LuaSyntaxTree\FlowStatements\WhileStatementTest.cs" />
+    <Compile Include="LuaSyntaxTree\IdentifierExpressionTest.cs" />
+    <Compile Include="LuaSyntaxTree\LiteralExpressions\TableExpressionTest.cs" />
+    <Compile Include="LuaSyntaxTree\LiteralExpressions\ValueLiteralExpressionsTest.cs" />
+    <Compile Include="LuaSyntaxTree\OperationExpressions\BinaryOperationExpressionTest.cs" />
+    <Compile Include="LuaSyntaxTree\OperationExpressions\DotsExpressionTest.cs" />
+    <Compile Include="LuaSyntaxTree\OperationExpressions\UnaryOperationExpressionTest.cs" />
+    <Compile Include="LuaSyntaxTree\Program.cs" />
+    <Compile Include="LuaSyntaxTree\Statements\AssignmentStatementTest.cs" />
+    <Compile Include="LuaSyntaxTree\Statements\StatementsTest.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Roslyn.Lua.Core\Roslyn.Lua.Core.csproj">

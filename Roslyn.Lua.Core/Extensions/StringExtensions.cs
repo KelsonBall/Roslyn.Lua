@@ -23,6 +23,7 @@ namespace Roslyn.Lua.Core
 
         public static IEnumerable<Token> Tokens(this string source)
         {
+            source = source + System.Environment.NewLine;
             var result = Token.PopToken(source);
             while (result.token != null)
             {

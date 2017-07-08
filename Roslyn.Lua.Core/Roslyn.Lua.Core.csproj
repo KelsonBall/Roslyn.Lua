@@ -43,23 +43,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\IntegerExtensions.cs" />
+    <Compile Include="LuaSyntaxTree\FlowStatements\ForInStatement.cs" />
+    <Compile Include="LuaSyntaxTree\FlowStatements\ForNumStatement.cs" />
+    <Compile Include="LuaSyntaxTree\FlowStatements\WhileStatement.cs" />
+    <Compile Include="LuaSyntaxTree\OperationExpressions\DotsExpression.cs" />
+    <Compile Include="LuaSyntaxTree\Statements\AssignmentStatement.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Extensions\EnumerableOfTokenExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
     <Compile Include="LuaSyntaxTree\Block.cs" />
     <Compile Include="LuaSyntaxTree\Expressions.cs" />
-    <Compile Include="LuaSyntaxTree\FlowExpressions\FunctionExpressions.cs" />
+    <Compile Include="LuaSyntaxTree\FlowExpressions\FunctionStatement.cs" />
     <Compile Include="LuaSyntaxTree\FlowExpressions\ParenExpression.cs" />
     <Compile Include="LuaSyntaxTree\FlowStatements\JumpStatements.cs" />
-    <Compile Include="LuaSyntaxTree\FlowStatements\LoopStatements.cs" />
+    <Compile Include="LuaSyntaxTree\FlowStatements\RepeatStatement.cs" />
+    <Compile Include="LuaSyntaxTree\IdentifierExpression.cs" />
     <Compile Include="LuaSyntaxTree\LiteralExpressions\TableExpression.cs" />
     <Compile Include="LuaSyntaxTree\LiteralExpressions\ValueLiteralExpressions.cs" />
     <Compile Include="LuaSyntaxTree\LuaSyntaxNode.cs" />
     <Compile Include="LuaSyntaxTree\OperationExpressions\BinaryOperationExpression.cs" />
     <Compile Include="LuaSyntaxTree\OperationExpressions\UnaryOperationExpression.cs" />
-    <Compile Include="LuaSyntaxTree\Statements.cs" />
+    <Compile Include="LuaSyntaxTree\Program.cs" />
+    <Compile Include="LuaSyntaxTree\Statements\Statements.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Token.cs" />
+    <Compile Include="TokenType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
