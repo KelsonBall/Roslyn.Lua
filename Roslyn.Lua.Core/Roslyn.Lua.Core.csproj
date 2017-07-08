@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\IntegerExtensions.cs" />
+    <Compile Include="Interpreter\LuaState.cs" />
     <Compile Include="LuaSyntaxTree\FlowStatements\ForInStatement.cs" />
     <Compile Include="LuaSyntaxTree\FlowStatements\ForNumStatement.cs" />
     <Compile Include="LuaSyntaxTree\FlowStatements\WhileStatement.cs" />
